@@ -1,0 +1,89 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+    
+  <!--
+  To execute all methods in this class
+  <test name="Knock Out Pages" >
+    <classes>
+       <class name="NikhilSelenium.NikhilSeleniumMavenTestNG.BasicAnnotationsTest"/>
+    </classes>
+  </test>
+  
+  -->
+  <!--
+  To execute negative tests
+  <test name="Knock Out Pages" >
+    <classes>
+       <class name="NikhilSelenium.NikhilSeleniumMavenTestNG.BasicAnnotationsTest">
+			<methods>
+				<include name=".*PageObject"/>
+				<include name=".*Negative.*"/>
+			</methods>
+	   </class>
+    </classes>
+  </test>
+  -->
+  <!--
+  <parameter name="ItemToAdd" value="Pineapple"/>
+  <test name="Knock Out Pages" >
+    <classes>
+       <class name="NikhilSelenium.NikhilSeleniumMavenTestNG.BasicAnnotationsTest">
+			<methods>
+				<include name="verifyAddItemPageObjectParameterised"/>
+				
+			</methods>
+	   </class>
+    </classes>
+  </test>
+ -->
+ 
+ <!--Illustration of groups
+ <test name="Knock Out Pages" >
+ 
+	 <groups>
+		<run>
+			<include name="Regression"/>
+     
+		</run>
+		</groups>
+
+    <classes>
+       <class name="NikhilSelenium.NikhilSeleniumMavenTestNG.BasicAnnotationsTest"/>
+			
+	   
+    </classes>  
+  </test>
+ -->
+ <!--
+ Example to illustrate dateprovider in another class
+ -->
+ <test name="KnockOutDataProviderInAnotherClass">
+	<classes>
+		<class name="HarishMaven.SeleniumMavenTestNG.DataProviderTest"> 
+			<methods>
+				<include name="verifyAddProductDPInAnotherClass"/>
+			</methods>
+		</class>
+	</classes>
+ </test>
+ <!--
+ <test name="KnockOutDataProvider">
+	<classes>
+		<class name="HarishMaven.SeleniumMavenTestNG.DataProviderTest">
+			<methods>
+				<include name="verifyAddProduct"/>
+			</methods>
+		</class>
+	</classes>
+ </test>
+ -->
+ <!--
+  <test name="Regression1">
+    <classes>
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+  -->
+</suite>
